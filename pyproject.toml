@@ -1,0 +1,15 @@
+[project]
+name = "aerosend-utils"
+version = "0.9.0"
+requires-python = ">=3.12"
+dependencies = ["psycopg[binary]>=3.2", "click>=8.1"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[project.scripts]
+aero-placement = "aerosend_utils.placement_test:main"
+aero-backfill = "aerosend_utils.backfill_deliverability:main"
+
+[tool.ruff]
+line-length = 110
