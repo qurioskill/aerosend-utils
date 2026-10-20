@@ -7,3 +7,4 @@
 - SQL: hypertable health
 - Classifier: treat 5.1.10 as hard
 - ruff config
+- Placement: dry-run flag
